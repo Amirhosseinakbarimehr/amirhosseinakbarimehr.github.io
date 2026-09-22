@@ -1,475 +1,1181 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="google-site-verification" content="beo_J6ZCD6kf6EOLaN_mY_DyzPOFYmDOxEVJG2tLqGg" />
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="...">
-<meta name="description" content="وب‌سایت رسمی امیرحسین اکبری مهر، بازیگر سینما و تلویزیون؛ بیوگرافی، رزومه، آثار و گالری.">
-<meta name="keywords" content="امیرحسین اکبری مهر, بازیگر, بازیگر سینما, بازیگر تلویزیون">
-<meta name="author" content="امیرحسین اکبری مهر">
+<meta name="google-site-verification"
+content="beo_J6ZCD6kf6EOLaN_mY_DyzPOFYmDOxEVJG2tLqGg">
 
-<title>امیرحسین اکبری مهر | بازیگر سینما و تلویزیون</title>
+<meta name="description"
+content="وب‌سایت رسمی امیرحسین اکبری مهر، بازیگر سینما و تلویزیون؛ بیوگرافی، رزومه و آثار.">
+
+<meta name="keywords"
+content="امیرحسین اکبری مهر, بازیگر, بازیگر سینما, بازیگر تلویزیون">
+
+<meta name="author"
+content="امیرحسین اکبری مهر">
+
+<title>
+امیرحسین اکبری مهر | بازیگر سینما و تلویزیون
+</title>
+
 
 <style>
+
+/* =========================
+   تنظیمات اصلی
+========================= */
+
 :root{
+
     --bg:#050b14;
     --bg2:#0a1422;
     --card:#101d2e;
+
     --gold:#d7b66b;
     --gold2:#f2d58f;
+
     --text:#f7f8fa;
     --muted:#b5bfcc;
     --line:#26384e;
 }
 
+
 *{
+
     box-sizing:border-box;
     scroll-behavior:smooth;
+
 }
+
 
 html{
+
     scroll-padding-top:80px;
+
 }
+
 
 body{
+
     margin:0;
-    font-family:Tahoma,Arial,sans-serif;
+
+    font-family:
+    Tahoma,
+    Arial,
+    sans-serif;
+
     background:var(--bg);
+
     color:var(--text);
+
     line-height:1.9;
+
 }
+
 
 a{
+
     color:inherit;
+
 }
+
+
+/* =========================
+   هدر
+========================= */
 
 header{
+
     position:sticky;
+
     top:0;
+
     z-index:1000;
+
     padding:14px 6%;
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
+
     gap:20px;
-    background:rgba(5,11,20,.95);
+
+    background:
+    rgba(5,11,20,.95);
+
     backdrop-filter:blur(15px);
-    border-bottom:1px solid rgba(215,182,107,.25);
+
+    border-bottom:
+    1px solid
+    rgba(215,182,107,.25);
+
 }
+
 
 .logo{
+
     color:var(--gold);
+
     font-size:18px;
+
     font-weight:bold;
+
     white-space:nowrap;
+
 }
+
 
 nav{
+
     display:flex;
+
     flex-wrap:wrap;
+
     justify-content:center;
+
     gap:6px;
+
 }
+
 
 nav a{
+
     text-decoration:none;
+
     color:#e7ebf0;
+
     padding:6px 10px;
+
     border-radius:20px;
+
     font-size:13px;
+
+    transition:.25s;
+
 }
+
 
 nav a:hover{
+
     color:var(--gold2);
-    background:rgba(215,182,107,.1);
+
+    background:
+    rgba(215,182,107,.1);
+
 }
+
+
+/* =========================
+   صفحه اصلی
+========================= */
 
 .hero{
-    min-height:calc(100vh - 70px);
+
+    min-height:
+    calc(100vh - 70px);
+
     display:grid;
-    grid-template-columns:1.05fr .95fr;
+
+    grid-template-columns:
+    1.05fr .95fr;
+
     align-items:center;
+
     gap:60px;
+
     padding:75px 8%;
+
     background:
-    radial-gradient(circle at 20% 35%,rgba(215,182,107,.1),transparent 32%),
-    linear-gradient(135deg,#050b14,#0d1b2d);
+
+    radial-gradient(
+        circle at 20% 35%,
+        rgba(215,182,107,.1),
+        transparent 32%
+    ),
+
+    linear-gradient(
+        135deg,
+        #050b14,
+        #0d1b2d
+    );
+
 }
+
 
 .hero-text{
+
     max-width:700px;
+
 }
+
 
 .badge{
+
     display:inline-block;
+
     color:var(--gold);
-    border:1px solid rgba(215,182,107,.4);
+
+    border:
+    1px solid
+    rgba(215,182,107,.4);
+
     padding:4px 13px;
+
     border-radius:20px;
+
     font-size:12px;
+
     letter-spacing:1px;
+
 }
+
 
 .hero h1{
-    font-size:clamp(40px,6vw,76px);
+
+    font-size:
+    clamp(40px,6vw,76px);
+
     line-height:1.2;
+
     margin:15px 0;
+
 }
+
 
 .hero h1 span{
+
     color:var(--gold);
+
 }
+
 
 .lead{
+
     font-size:22px;
+
     font-weight:bold;
+
     margin:0;
+
 }
+
 
 .sub{
+
     color:var(--muted);
+
     font-size:17px;
+
     margin-top:5px;
+
 }
+
 
 .actions{
+
     display:flex;
+
     flex-wrap:wrap;
+
     gap:12px;
+
     margin-top:28px;
+
 }
+
 
 .button{
+
     text-decoration:none;
+
     padding:10px 23px;
-    border:1px solid var(--gold);
+
+    border:
+    1px solid
+    var(--gold);
+
     border-radius:28px;
+
     color:var(--gold);
+
     transition:.25s;
+
 }
+
 
 .button.primary{
+
     background:var(--gold);
+
     color:#050b14;
+
     font-weight:bold;
+
 }
+
 
 .button:hover{
+
     transform:translateY(-2px);
-    box-shadow:0 8px 25px rgba(215,182,107,.2);
+
+    box-shadow:
+    0 8px 25px
+    rgba(215,182,107,.2);
+
 }
+
+
+/* =========================
+   تصویر اصلی سایت
+========================= */
 
 .hero-image{
+
     position:relative;
+
     max-width:480px;
+
     width:100%;
+
     margin:auto;
+
 }
+
 
 .hero-image:before{
+
     content:"";
+
     position:absolute;
+
     inset:-12px;
-    border:1px solid rgba(215,182,107,.45);
+
+    border:
+    1px solid
+    rgba(215,182,107,.45);
+
     border-radius:24px;
+
     transform:rotate(2deg);
+
 }
+
 
 .hero-image img{
+
     position:relative;
+
     display:block;
+
     width:100%;
+
     max-height:620px;
+
     object-fit:cover;
+
     object-position:center top;
+
     border-radius:18px;
-    border:1px solid rgba(215,182,107,.55);
-    box-shadow:0 25px 70px rgba(0,0,0,.5);
+
+    border:
+    1px solid
+    rgba(215,182,107,.55);
+
+    box-shadow:
+    0 25px 70px
+    rgba(0,0,0,.5);
+
 }
+
+
+/* =========================
+   بخش‌ها
+========================= */
 
 section{
+
     max-width:1250px;
+
     margin:auto;
+
     padding:90px 8%;
+
 }
+
 
 .section-kicker{
+
     color:var(--gold);
+
     font-size:12px;
+
     letter-spacing:2px;
+
 }
+
 
 .section-title{
+
     color:var(--gold2);
+
     font-size:34px;
-    margin:0 0 30px;
+
+    margin:
+    0 0 30px;
+
 }
+
+
+/* =========================
+   بیوگرافی
+========================= */
 
 .profile-grid{
+
     display:grid;
-    grid-template-columns:1fr 1fr;
+
+    grid-template-columns:
+    1fr 1fr;
+
     gap:22px;
+
 }
 
-.card,
-.work{
-    background:linear-gradient(145deg,var(--card),#0b1727);
-    border:1px solid var(--line);
+
+.card{
+
+    background:
+    linear-gradient(
+        145deg,
+        var(--card),
+        #0b1727
+    );
+
+    border:
+    1px solid
+    var(--line);
+
     padding:28px;
+
     border-radius:16px;
-    box-shadow:0 15px 35px rgba(0,0,0,.16);
+
+    box-shadow:
+    0 15px 35px
+    rgba(0,0,0,.16);
+
 }
 
-.card h3,
-.work h3{
+
+.card h3{
+
     color:var(--gold2);
+
     margin-top:0;
+
 }
 
-.card p,
-.work p{
+
+.card p{
+
     color:var(--muted);
+
 }
+
+
+/* =========================
+   رزومه
+========================= */
 
 .works{
+
     display:grid;
-    grid-template-columns:repeat(2,1fr);
+
+    grid-template-columns:
+    repeat(2,1fr);
+
     gap:20px;
+
 }
+
 
 .work{
+
+    background:
+    linear-gradient(
+        145deg,
+        var(--card),
+        #0b1727
+    );
+
+    border:
+    1px solid
+    var(--line);
+
+    padding:28px;
+
+    border-radius:16px;
+
+    box-shadow:
+    0 15px 35px
+    rgba(0,0,0,.16);
+
     transition:.25s;
+
 }
+
 
 .work:hover{
-    transform:translateY(-4px);
-    border-color:rgba(215,182,107,.5);
+
+    transform:
+    translateY(-4px);
+
+    border-color:
+    rgba(215,182,107,.5);
+
 }
 
-.work .number{
-    color:var(--gold);
-    font-size:13px;
+
+.work h3{
+
+    color:var(--gold2);
+
+    margin-top:8px;
+
 }
 
-.contact{
-    text-align:center;
-    background:
-    radial-gradient(circle at center,rgba(215,182,107,.08),transparent 55%);
-}
 
-.contact p{
+.work p{
+
     color:var(--muted);
+
 }
+
+
+.number{
+
+    color:var(--gold);
+
+    font-size:13px;
+
+}
+
+
+/* =========================
+   آثار
+========================= */
+
+.film-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:24px;
+
+}
+
+
+.film-card{
+
+    background:
+    linear-gradient(
+        145deg,
+        #101d2e,
+        #091422
+    );
+
+    border:
+    1px solid
+    var(--line);
+
+    border-radius:18px;
+
+    padding:28px;
+
+    box-shadow:
+    0 18px 45px
+    rgba(0,0,0,.28);
+
+    transition:.3s;
+
+}
+
+
+.film-card:hover{
+
+    transform:
+    translateY(-5px);
+
+    border-color:
+    rgba(215,182,107,.55);
+
+}
+
+
+.film-number{
+
+    color:var(--gold);
+
+    font-size:13px;
+
+    margin-bottom:8px;
+
+}
+
+
+.film-card h3{
+
+    color:var(--gold2);
+
+    font-size:25px;
+
+    margin:
+    0 0 15px;
+
+}
+
+
+.film-card p{
+
+    color:var(--muted);
+
+    margin:8px 0;
+
+}
+
+
+.film-card strong{
+
+    color:#e9edf2;
+
+}
+
+
+/* =========================
+   ارتباط
+========================= */
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+
+.contact-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    text-decoration:none;
+
+    background:
+    linear-gradient(
+        145deg,
+        var(--card),
+        #0b1727
+    );
+
+    border:
+    1px solid
+    var(--line);
+
+    padding:24px;
+
+    border-radius:16px;
+
+    transition:.3s;
+
+}
+
+
+.contact-card:hover{
+
+    transform:
+    translateY(-5px);
+
+    border-color:
+    rgba(215,182,107,.65);
+
+    box-shadow:
+    0 15px 35px
+    rgba(0,0,0,.3);
+
+}
+
+
+.contact-icon{
+
+    width:52px;
+
+    height:52px;
+
+    min-width:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:
+    1px solid
+    rgba(215,182,107,.5);
+
+    border-radius:50%;
+
+    color:var(--gold2);
+
+    font-size:24px;
+
+}
+
+
+.contact-card h3{
+
+    margin:
+    0 0 4px;
+
+    color:var(--gold2);
+
+    font-size:18px;
+
+}
+
+
+.contact-card p{
+
+    margin:0;
+
+    color:var(--muted);
+
+    font-size:14px;
+
+}
+
+
+/* =========================
+   فوتر
+========================= */
 
 footer{
+
     text-align:center;
+
     padding:30px 20px;
-    border-top:1px solid var(--line);
+
+    border-top:
+    1px solid
+    var(--line);
+
     color:#8f9baa;
+
     font-size:13px;
+
 }
+
+
+/* =========================
+   موبایل
+========================= */
 
 @media(max-width:850px){
 
     header{
+
         flex-direction:column;
+
         padding:12px 4%;
+
     }
+
 
     .hero{
+
         grid-template-columns:1fr;
+
         text-align:center;
+
         padding:55px 6%;
+
     }
+
 
     .hero-text{
+
         margin:auto;
+
     }
+
 
     .actions{
+
         justify-content:center;
+
     }
+
 
     .hero-image{
+
         max-width:400px;
+
     }
+
 
     .profile-grid,
-    .works{
+
+    .works,
+
+    .film-grid,
+
+    .contact-grid{
+
         grid-template-columns:1fr;
+
     }
+
 
     section{
+
         padding:70px 6%;
+
     }
 
+
     .section-title{
+
         font-size:29px;
+
     }
+
 }
+
 
 @media(max-width:500px){
 
     .logo{
+
         font-size:16px;
+
     }
+
 
     nav a{
+
         font-size:11px;
+
         padding:5px 7px;
+
     }
+
 
     .hero h1{
+
         font-size:39px;
+
     }
+
 
     .lead{
+
         font-size:19px;
+
     }
+
 
     .sub{
+
         font-size:15px;
+
     }
 
+
     .card,
-    .work{
+
+    .work,
+
+    .film-card{
+
         padding:22px;
+
     }
+
+
+    .contact-card{
+
+        padding:20px;
+
+    }
+
 }
+
 </style>
+
 </head>
+
 
 <body>
 
+
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
 
+
     <div class="logo">
+
         امیرحسین اکبری مهر
+
     </div>
 
+
     <nav>
-        <a href="#home">خانه</a>
-        <a href="#bio">بیوگرافی</a>
-        <a href="#resume">رزومه</a>
-        <a href="#works">آثار</a>
-        <a href="#contact">تماس</a>
+
+        <a href="#home">
+            خانه
+        </a>
+
+        <a href="#bio">
+            بیوگرافی
+        </a>
+
+        <a href="#resume">
+            رزومه
+        </a>
+
+        <a href="#works">
+            آثار
+        </a>
+
+        <a href="#contact">
+            ارتباط
+        </a>
+
     </nav>
+
 
 </header>
 
 
+
 <main>
 
-<section class="hero" id="home">
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section
+class="hero"
+id="home"
+>
+
 
     <div class="hero-text">
 
+
         <div class="badge">
+
             ACTOR • CINEMA • TELEVISION
+
         </div>
+
 
         <h1>
+
             امیرحسین<br>
-            <span>اکبری مهر</span>
+
+            <span>
+                اکبری مهر
+            </span>
+
         </h1>
 
+
         <p class="lead">
+
             بازیگر سینما و تلویزیون
+
         </p>
+
 
         <p class="sub">
-    روایتگر نقش‌هایی متفاوت در سینما، تلویزیون
+
+            روایتگر نقش‌هایی متفاوت
+            در سینما و تلویزیون
+
         </p>
 
+
         <div class="actions">
-            <a class="button primary" href="#resume">
+
+
+            <a
+            class="button primary"
+            href="#resume"
+            >
+
                 مشاهده رزومه
+
             </a>
 
-            <a class="button" href="#works">
-آثار 
+
+            <a
+            class="button"
+            href="#works"
+            >
+
+                آثار
+
             </a>
+
+
         </div>
 
+
     </div>
+
 
 
     <div class="hero-image">
 
+
         <img
-            src="profile.webp"
-            alt="امیرحسین اکبری مهر"
+        src="profile.webp"
+        alt="امیرحسین اکبری مهر"
         >
+
 
     </div>
 
+
 </section>
 
+
+
+<!-- =========================
+     BIO
+========================= -->
 
 <section id="bio">
 
+
     <div class="section-kicker">
-        ABOUT 
+
+        ABOUT
+
     </div>
 
+
     <h2 class="section-title">
+
         بیوگرافی امیرحسین اکبری مهر
+
     </h2>
+
 
     <div class="profile-grid">
 
+
         <div class="card">
 
+
             <h3>
-                درباره 
+
+                درباره
+
             </h3>
 
+
             <p>
-    امیرحسین اکبری مهر، بازیگر جوان و  توانا ایرانی، در تاریخ ۲۰ تیر ۱۳۸۵ در تهران به دنیا آمد. او فعالیت هنری خود را از سال ۱۴۰۰ آغاز کرد و سپس به چندین فیلم تلویزیونی و جشنواره‌ای پرداخت که توانست خود را به دنیای سینما و تلویزیون معرفی کند.
 
-پس از یک وقفه چهار ساله به دلایل شخصی، امیرحسین اکنون با سریال جدیدی به دنیای سینما و تلویزیون بازگشته است. این سریال در حال حاضر در مرحله پیش‌تولید قرار دارد و انتظار می‌رود که با هنرنمایی او، بار دیگر مخاطبان را تحت تأثیر قرار دهد. امیرحسین اکبری مهر، با عزم و اراده‌ای قوی، به دنبال تحقق رویاهای هنری خود است و آماده است تا در مسیر حرفه‌ای‌اش گام‌های بلندی بردارد.
+                امیرحسین اکبری مهر، بازیگر جوان و توانا ایرانی، در تاریخ ۲۰ تیر ۱۳۸۵ در تهران به دنیا آمد. او فعالیت هنری خود را از سال ۱۴۰۰ آغاز کرد و سپس به چندین فیلم تلویزیونی و جشنواره‌ای پرداخت که توانست خود را به دنیای سینما و تلویزیون معرفی کند.
 
-توجه به استعداد جوان و نوظهور در صنعت سینما و تلویزیون همواره حائز اهمیت است و امیرحسین می‌تواند نمونه‌ای از نسل جدید بازیگران باشد که با پشتکار و خلاقیت خود، آینده روشنی را برای خود رقم بزند.
-            
+                <br><br>
+
+                پس از یک وقفه چهار ساله به دلایل شخصی، امیرحسین اکنون با سریال جدیدی به دنیای سینما و تلویزیون بازگشته است. این سریال در حال حاضر در مرحله پیش‌تولید قرار دارد و انتظار می‌رود که با هنرنمایی او، بار دیگر مخاطبان را تحت تأثیر قرار دهد. امیرحسین اکبری مهر، با عزم و اراده‌ای قوی، به دنبال تحقق رویاهای هنری خود است و آماده است تا در مسیر حرفه‌ای‌اش گام‌های بلندی بردارد.
+
+                <br><br>
+
+                توجه به استعداد جوان و نوظهور در صنعت سینما و تلویزیون همواره حائز اهمیت است و امیرحسین می‌تواند نمونه‌ای از نسل جدید بازیگران باشد که با پشتکار و خلاقیت خود، آینده روشنی را برای خود رقم بزند.
+
             </p>
+
 
         </div>
 
 
+
         <div class="card">
 
+
             <h3>
+
                 حوزه فعالیت
+
             </h3>
 
+
             <p>
+
                 سینما، تلویزیون و پروژه‌های تصویری
                 از زمینه‌های فعالیت هنری وی هستند.
+
             </p>
+
 
         </div>
 
+
     </div>
+
 
 </section>
 
 
+
+<!-- =========================
+     RESUME
+========================= -->
+
 <section id="resume">
 
+
     <div class="section-kicker">
-        MY RESUME
+
+        RESUME
+
     </div>
 
+
     <h2 class="section-title">
-        رزومه فعالیت 
+
+        رزومه فعالیت
+
     </h2>
 
+
     <div class="works">
+
 
         <div class="work">
 
@@ -478,16 +1184,19 @@ footer{
             </div>
 
             <h3>
-                فیلم کوتاه «قانون سوم»
+                فیلم «قانون سوم»
             </h3>
 
             <p>
-                نقش اصلی فیلم کوتاه «قانون سوم»
+
+                نقش اصلی فیلم «قانون سوم»
                 به کارگردانی امیرجداری،
                 جهت حضور در فستیوال‌های خارجی.
+
             </p>
 
         </div>
+
 
 
         <div class="work">
@@ -501,12 +1210,15 @@ footer{
             </h3>
 
             <p>
+
                 نقش اصلی فیلم «خیابان‌های سرد»
                 به کارگردانی محمود هنرمند،
                 جهت شرکت در جشنواره‌های داخلی و خارجی.
+
             </p>
 
         </div>
+
 
 
         <div class="work">
@@ -520,11 +1232,14 @@ footer{
             </h3>
 
             <p>
+
                 ایفای نقش کلیدی در تله‌فیلم «بخشش»
                 به کارگردانی استاد محمود مقامی.
+
             </p>
 
         </div>
+
 
 
         <div class="work">
@@ -538,88 +1253,363 @@ footer{
             </h3>
 
             <p>
+
                 ایفای نقش کلیدی در تله‌فیلم «جنون عشق»
                 به کارگردانی محمدرضا دلخانی.
+
             </p>
 
         </div>
 
+
     </div>
+
 
 </section>
 
+
+
+<!-- =========================
+     WORKS
+========================= -->
 
 <section id="works">
 
+
     <div class="section-kicker">
-        SELECTED WORKS
+
+        WORKS
+
     </div>
 
+
     <h2 class="section-title">
+
         آثار
+
     </h2>
 
-    <div class="profile-grid">
 
-        <div class="card">
-            <h3>قانون سوم</h3>
-            <p>
-                فیلم کوتاه — نقش اصلی
-            </p>
-        </div>
+    <div class="film-grid">
 
-        <div class="card">
-            <h3>خیابان‌های سرد</h3>
-            <p>
-                فیلم سینمایی — نقش اصلی
-            </p>
-        </div>
 
-        <div class="card">
-            <h3>بخشش</h3>
-            <p>
-                تله‌فیلم — نقش کلیدی
-            </p>
-        </div>
+        <article class="film-card">
 
-        <div class="card">
-            <h3>جنون عشق</h3>
+            <div class="film-number">
+                01
+            </div>
+
+            <h3>
+                قانون سوم
+            </h3>
+
             <p>
-                تله‌فیلم — نقش کلیدی
+
+                <strong>
+                    نقش:
+                </strong>
+
+                نقش اصلی
+
             </p>
-        </div>
+
+            <p>
+
+                <strong>
+                    کارگردان:
+                </strong>
+
+                امیرجداری
+
+            </p>
+
+            <p>
+
+                جهت حضور در فستیوال‌های خارجی
+
+            </p>
+
+        </article>
+
+
+
+        <article class="film-card">
+
+            <div class="film-number">
+                02
+            </div>
+
+            <h3>
+                خیابان‌های سرد
+            </h3>
+
+            <p>
+
+                <strong>
+                    نقش:
+                </strong>
+
+                نقش اصلی
+
+            </p>
+
+            <p>
+
+                <strong>
+                    کارگردان:
+                </strong>
+
+                محمود هنرمند
+
+            </p>
+
+            <p>
+
+                جهت شرکت در جشنواره‌های داخلی و خارجی
+
+            </p>
+
+        </article>
+
+
+
+        <article class="film-card">
+
+            <div class="film-number">
+                03
+            </div>
+
+            <h3>
+                بخشش
+            </h3>
+
+            <p>
+
+                <strong>
+                    نقش:
+                </strong>
+
+                نقش کلیدی
+
+            </p>
+
+            <p>
+
+                <strong>
+                    کارگردان:
+                </strong>
+
+                استاد محمود مقامی
+
+            </p>
+
+        </article>
+
+
+
+        <article class="film-card">
+
+            <div class="film-number">
+                04
+            </div>
+
+            <h3>
+                جنون عشق
+            </h3>
+
+            <p>
+
+                <strong>
+                    نقش:
+                </strong>
+
+                نقش کلیدی
+
+            </p>
+
+            <p>
+
+                <strong>
+                    کارگردان:
+                </strong>
+
+                محمدرضا دلخانی
+
+            </p>
+
+        </article>
+
 
     </div>
+
 
 </section>
 
 
-<section class="contact" id="contact">
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact">
+
 
     <div class="section-kicker">
+
         CONTACT
+
     </div>
 
+
     <h2 class="section-title">
-      ارتباط با امیرحسین اکبری مهر 
+
+        ارتباط با امیرحسین اکبری مهر
+
     </h2>
 
-    <p>
-        
-    </p>
+
+    <div class="contact-grid">
+
+
+        <!-- تماس تلفنی -->
+
+        <a
+        class="contact-card"
+        href="tel:09388564803"
+        >
+
+
+            <div class="contact-icon">
+
+                ☎
+
+            </div>
+
+
+            <div>
+
+                <h3>
+
+                    تماس تلفنی
+
+                </h3>
+
+
+                <p>
+
+                    ۰۹۳۸۸۵۶۴۸۰۳
+
+                </p>
+
+            </div>
+
+
+        </a>
+
+
+
+        <!-- اینستاگرام -->
+
+        <a
+        class="contact-card"
+        href="https://instagram.com/amirhossein____akbari"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+
+
+            <div class="contact-icon">
+
+                ◎
+
+            </div>
+
+
+            <div>
+
+                <h3>
+
+                    اینستاگرام
+
+                </h3>
+
+
+                <p dir="ltr">
+
+                    @amirhossein____akbari
+
+                </p>
+
+            </div>
+
+
+        </a>
+
+
+
+        <!-- تلگرام -->
+
+        <a
+        class="contact-card"
+        href="https://t.me/A_M_I_R_H_O_S_S_E_I_N"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+
+
+            <div class="contact-icon">
+
+                ✈
+
+            </div>
+
+
+            <div>
+
+                <h3>
+
+                    تلگرام
+
+                </h3>
+
+
+                <p dir="ltr">
+
+                    @A_M_I_R_H_O_S_S_E_I_N
+
+                </p>
+
+            </div>
+
+
+        </a>
+
+
+    </div>
+
 
 </section>
+
 
 </main>
 
 
+
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
 
-    © امیرحسین اکبری مهر
+    امیرحسین اکبری مهر
+
     <br>
+
     بازیگر سینما و تلویزیون
 
 </footer>
 
+
 </body>
+
 </html>
