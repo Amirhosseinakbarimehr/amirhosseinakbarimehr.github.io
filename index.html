@@ -22,12 +22,7 @@ content="امیرحسین اکبری مهر">
 امیرحسین اکبری مهر | بازیگر سینما و تلویزیون
 </title>
 
-
 <style>
-
-/* =========================
-   تنظیمات اصلی
-========================= */
 
 :root{
     --bg:#050b14;
@@ -61,10 +56,7 @@ a{
     color:inherit;
 }
 
-
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 header{
     position:sticky;
@@ -75,12 +67,9 @@ header{
     justify-content:space-between;
     align-items:center;
     gap:20px;
-
     background:rgba(5,11,20,.96);
     backdrop-filter:blur(15px);
-
-    border-bottom:
-    1px solid rgba(215,182,107,.25);
+    border-bottom:1px solid rgba(215,182,107,.25);
 }
 
 .logo{
@@ -111,31 +100,22 @@ nav a:hover{
     background:rgba(215,182,107,.1);
 }
 
-
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero{
     min-height:calc(100vh - 70px);
-
     display:grid;
     grid-template-columns:1.05fr .95fr;
-
     align-items:center;
-
     gap:60px;
-
     padding:75px 8%;
 
     background:
-
     radial-gradient(
         circle at 20% 35%,
         rgba(215,182,107,.1),
         transparent 32%
     ),
-
     linear-gradient(
         135deg,
         #050b14,
@@ -149,18 +129,11 @@ nav a:hover{
 
 .badge{
     display:inline-block;
-
     color:var(--gold);
-
-    border:
-    1px solid rgba(215,182,107,.4);
-
+    border:1px solid rgba(215,182,107,.4);
     padding:4px 13px;
-
     border-radius:20px;
-
     font-size:12px;
-
     letter-spacing:1px;
 }
 
@@ -195,16 +168,10 @@ nav a:hover{
 
 .button{
     text-decoration:none;
-
     padding:10px 23px;
-
-    border:
-    1px solid var(--gold);
-
+    border:1px solid var(--gold);
     border-radius:28px;
-
     color:var(--gold);
-
     transition:.25s;
 }
 
@@ -216,15 +183,10 @@ nav a:hover{
 
 .button:hover{
     transform:translateY(-2px);
-
-    box-shadow:
-    0 8px 25px rgba(215,182,107,.2);
+    box-shadow:0 8px 25px rgba(215,182,107,.2);
 }
 
-
-/* =========================
-   HERO IMAGE
-========================= */
+/* HERO IMAGE */
 
 .hero-image{
     position:relative;
@@ -235,45 +197,26 @@ nav a:hover{
 
 .hero-image:before{
     content:"";
-
     position:absolute;
-
     inset:-12px;
-
-    border:
-    1px solid rgba(215,182,107,.45);
-
+    border:1px solid rgba(215,182,107,.45);
     border-radius:24px;
-
     transform:rotate(2deg);
 }
 
 .hero-image img{
     position:relative;
-
     display:block;
-
     width:100%;
-
     max-height:620px;
-
     object-fit:cover;
-
     object-position:center top;
-
     border-radius:18px;
-
-    border:
-    1px solid rgba(215,182,107,.55);
-
-    box-shadow:
-    0 25px 70px rgba(0,0,0,.5);
+    border:1px solid rgba(215,182,107,.55);
+    box-shadow:0 25px 70px rgba(0,0,0,.5);
 }
 
-
-/* =========================
-   SECTIONS
-========================= */
+/* SECTIONS */
 
 section{
     max-width:1250px;
@@ -293,10 +236,7 @@ section{
     margin:0 0 30px;
 }
 
-
-/* =========================
-   BIOGRAPHY
-========================= */
+/* BIO */
 
 .profile-grid{
     display:grid;
@@ -312,15 +252,10 @@ section{
         #0b1727
     );
 
-    border:
-    1px solid var(--line);
-
+    border:1px solid var(--line);
     padding:28px;
-
     border-radius:16px;
-
-    box-shadow:
-    0 15px 35px rgba(0,0,0,.16);
+    box-shadow:0 15px 35px rgba(0,0,0,.16);
 }
 
 .card h3{
@@ -332,10 +267,7 @@ section{
     color:var(--muted);
 }
 
-
-/* =========================
-   RESUME
-========================= */
+/* RESUME */
 
 .works{
     display:grid;
@@ -351,24 +283,16 @@ section{
         #0b1727
     );
 
-    border:
-    1px solid var(--line);
-
+    border:1px solid var(--line);
     padding:28px;
-
     border-radius:16px;
-
-    box-shadow:
-    0 15px 35px rgba(0,0,0,.16);
-
+    box-shadow:0 15px 35px rgba(0,0,0,.16);
     transition:.25s;
 }
 
 .work:hover{
     transform:translateY(-4px);
-
-    border-color:
-    rgba(215,182,107,.5);
+    border-color:rgba(215,182,107,.5);
 }
 
 .work h3{
@@ -385,9 +309,8 @@ section{
     font-size:13px;
 }
 
-
 /* =========================
-   FILMS
+   WORKS / FILMS
 ========================= */
 
 .film-grid{
@@ -404,24 +327,17 @@ section{
         #091422
     );
 
-    border:
-    1px solid var(--line);
-
+    border:1px solid var(--line);
     border-radius:18px;
-
-    padding:28px;
-
-    box-shadow:
-    0 18px 45px rgba(0,0,0,.28);
-
+    padding:20px;
+    overflow:hidden;
+    box-shadow:0 18px 45px rgba(0,0,0,.28);
     transition:.3s;
 }
 
 .film-card:hover{
     transform:translateY(-5px);
-
-    border-color:
-    rgba(215,182,107,.55);
+    border-color:rgba(215,182,107,.55);
 }
 
 .film-number{
@@ -445,10 +361,52 @@ section{
     color:#e9edf2;
 }
 
+/* MEDIA */
 
-/* =========================
-   CONTACT
-========================= */
+.film-poster{
+    width:100%;
+    height:360px;
+    object-fit:cover;
+    border-radius:14px;
+    border:1px solid rgba(215,182,107,.25);
+    margin-bottom:18px;
+    display:block;
+    background:#07101c;
+}
+
+.film-gallery{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    margin-top:18px;
+}
+
+.film-gallery img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:12px;
+    border:1px solid rgba(215,182,107,.2);
+    display:block;
+}
+
+.film-video{
+    width:100%;
+    margin-top:18px;
+    border-radius:14px;
+    border:1px solid rgba(215,182,107,.25);
+    background:#000;
+    display:block;
+}
+
+.media-title{
+    color:var(--gold);
+    font-size:13px;
+    margin-top:18px;
+    margin-bottom:8px;
+}
+
+/* CONTACT */
 
 .contact-section{
     position:relative;
@@ -470,7 +428,6 @@ section{
     display:flex;
     align-items:center;
     gap:18px;
-
     text-decoration:none;
 
     background:
@@ -480,101 +437,57 @@ section{
         #0b1727
     );
 
-    border:
-    1px solid var(--line);
-
+    border:1px solid var(--line);
     padding:25px;
-
     border-radius:18px;
-
     transition:.3s;
 }
 
 .contact-card:hover{
     transform:translateY(-6px);
-
-    border-color:
-    rgba(215,182,107,.7);
-
-    box-shadow:
-    0 18px 40px rgba(0,0,0,.35);
+    border-color:rgba(215,182,107,.7);
+    box-shadow:0 18px 40px rgba(0,0,0,.35);
 }
 
 .contact-icon{
     width:56px;
     height:56px;
-
     min-width:56px;
-
     display:flex;
-
     align-items:center;
     justify-content:center;
-
-    border:
-    1px solid rgba(215,182,107,.55);
-
+    border:1px solid rgba(215,182,107,.55);
     border-radius:50%;
-
     color:var(--gold2);
-
     font-size:25px;
-
-    background:
-    rgba(215,182,107,.04);
+    background:rgba(215,182,107,.04);
 }
 
 .contact-card h3{
     margin:0 0 5px;
-
     color:var(--gold2);
-
     font-size:18px;
 }
 
 .contact-card p{
     margin:0;
-
     color:var(--muted);
-
     font-size:14px;
-
     direction:ltr;
     text-align:right;
 }
 
-.contact-note{
-    margin-top:25px;
-
-    text-align:center;
-
-    color:#8f9baa;
-
-    font-size:13px;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
     text-align:center;
-
     padding:35px 20px;
-
-    border-top:
-    1px solid var(--line);
-
+    border-top:1px solid var(--line);
     color:#8f9baa;
-
     font-size:13px;
 }
 
-
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media(max-width:850px){
 
@@ -585,9 +498,7 @@ footer{
 
     .hero{
         grid-template-columns:1fr;
-
         text-align:center;
-
         padding:55px 6%;
     }
 
@@ -619,7 +530,6 @@ footer{
     }
 
 }
-
 
 @media(max-width:500px){
 
@@ -654,19 +564,23 @@ footer{
         padding:20px;
     }
 
+    .film-poster{
+        height:300px;
+    }
+
+    .film-gallery img{
+        height:140px;
+    }
+
 }
 
 </style>
 
 </head>
 
-
 <body>
 
-
-<!-- =========================
-     HEADER
-========================= -->
+<!-- HEADER -->
 
 <header>
 
@@ -674,132 +588,81 @@ footer{
         امیرحسین اکبری مهر
     </div>
 
-
     <nav>
 
-        <a href="#home">
-            خانه
-        </a>
-
-        <a href="#bio">
-            بیوگرافی
-        </a>
-
-        <a href="#resume">
-            رزومه
-        </a>
-
-        <a href="#works">
-            آثار
-        </a>
-
-        <a href="#contact">
-            ارتباط
-        </a>
+        <a href="#home">خانه</a>
+        <a href="#bio">بیوگرافی</a>
+        <a href="#resume">رزومه</a>
+        <a href="#works">آثار</a>
+        <a href="#contact">ارتباط</a>
 
     </nav>
 
 </header>
 
-
-
 <main>
 
-
-<!-- =========================
-     HOME
-========================= -->
+<!-- HOME -->
 
 <section class="hero" id="home">
 
-
     <div class="hero-text">
-
 
         <div class="badge">
             ACTOR • CINEMA • TELEVISION
         </div>
 
-
         <h1>
-
             امیرحسین<br>
-
-            <span>
-                اکبری مهر
-            </span>
-
+            <span>اکبری مهر</span>
         </h1>
-
 
         <p class="lead">
             بازیگر سینما و تلویزیون
         </p>
-
 
         <p class="sub">
             روایتگر نقش‌هایی متفاوت
             در سینما و تلویزیون
         </p>
 
-
         <div class="actions">
 
-            <a
-            class="button primary"
-            href="#resume"
-            >
+            <a class="button primary" href="#resume">
                 مشاهده رزومه
             </a>
 
-
-            <a
-            class="button"
-            href="#works"
-            >
+            <a class="button" href="#works">
                 آثار
             </a>
 
         </div>
 
-
     </div>
-
-
 
     <div class="hero-image">
 
         <img
         src="profile.webp"
-        alt="امیرحسین اکبری مهر"
-        >
+        alt="امیرحسین اکبری مهر">
 
     </div>
 
-
 </section>
 
-
-
-<!-- =========================
-     BIOGRAPHY
-========================= -->
+<!-- BIOGRAPHY -->
 
 <section id="bio">
-
 
     <div class="section-kicker">
         ABOUT
     </div>
 
-
     <h2 class="section-title">
         بیوگرافی امیرحسین اکبری مهر
     </h2>
 
-
     <div class="profile-grid">
-
 
         <div class="card">
 
@@ -807,24 +670,21 @@ footer{
                 درباره
             </h3>
 
-
             <p>
 
                 امیرحسین اکبری مهر، بازیگر جوان و توانا ایرانی، در تاریخ ۲۰ تیر ۱۳۸۵ در تهران به دنیا آمد. او فعالیت هنری خود را از سال ۱۴۰۰ آغاز کرد و سپس به چندین فیلم تلویزیونی و جشنواره‌ای پرداخت که توانست خود را به دنیای سینما و تلویزیون معرفی کند.
 
                 <br><br>
 
-                پس از یک وقفه چهار ساله به دلایل شخصی، امیرحسین اکنون با سریال جدیدی به دنیای سینما و تلویزیون بازگشته است. این سریال در حال حاضر در مرحله پیش‌تولید قرار دارد و انتظار می‌رود که با هنرنمایی او، بار دیگر مخاطبان را تحت تأثیر قرار دهد. امیرحسین اکبری مهر، با عزم و اراده‌ای قوی، به دنبال تحقق رویاهای هنری خود است و آماده است تا در مسیر حرفه‌ای‌اش گام‌های بلندی بردارد.
+                پس از یک وقفه چهار ساله به دلایل شخصی، امیرحسین اکنون با سریال جدیدی به دنیای سینما و تلویزیون بازگشته است. این سریال در حال حاضر در مرحله پیش‌تولید قرار دارد و انتظار می‌رود که با هنرنمایی او، بار دیگر مخاطبان را تحت تأثیر قرار دهد.
 
                 <br><br>
 
-                توجه به استعداد جوان و نوظهور در صنعت سینما و تلویزیون همواره حائز اهمیت است و امیرحسین می‌تواند نمونه‌ای از نسل جدید بازیگران باشد که با پشتکار و خلاقیت خود، آینده روشنی را برای خود رقم بزند.
+                امیرحسین اکبری مهر با عزم و اراده‌ای قوی، مسیر حرفه‌ای خود را در حوزه سینما و تلویزیون دنبال می‌کند.
 
             </p>
 
         </div>
-
-
 
         <div class="card">
 
@@ -839,33 +699,23 @@ footer{
 
         </div>
 
-
     </div>
-
 
 </section>
 
-
-
-<!-- =========================
-     RESUME
-========================= -->
+<!-- RESUME -->
 
 <section id="resume">
-
 
     <div class="section-kicker">
         RESUME
     </div>
 
-
     <h2 class="section-title">
         رزومه فعالیت
     </h2>
 
-
     <div class="works">
-
 
         <div class="work">
 
@@ -883,8 +733,6 @@ footer{
 
         </div>
 
-
-
         <div class="work">
 
             <div class="number">02</div>
@@ -901,8 +749,6 @@ footer{
 
         </div>
 
-
-
         <div class="work">
 
             <div class="number">03</div>
@@ -917,8 +763,6 @@ footer{
             </p>
 
         </div>
-
-
 
         <div class="work">
 
@@ -935,13 +779,9 @@ footer{
 
         </div>
 
-
     </div>
 
-
 </section>
-
-
 
 <!-- =========================
      WORKS
@@ -949,52 +789,22 @@ footer{
 
 <section id="works">
 
-
     <div class="section-kicker">
         WORKS
     </div>
-
 
     <h2 class="section-title">
         آثار
     </h2>
 
-
     <div class="film-grid">
 
+        <!-- خیابان‌های سرد -->
 
         <article class="film-card">
 
             <div class="film-number">
                 01
-            </div>
-
-            <h3>
-                قانون سوم
-            </h3>
-
-            <p>
-                <strong>نقش:</strong>
-                نقش اصلی
-            </p>
-
-            <p>
-                <strong>کارگردان:</strong>
-                امیرجداری
-            </p>
-
-            <p>
-                جهت حضور در فستیوال‌های خارجی
-            </p>
-
-        </article>
-
-
-
-        <article class="film-card">
-
-            <div class="film-number">
-                02
             </div>
 
             <h3>
@@ -1015,9 +825,123 @@ footer{
                 جهت شرکت در جشنواره‌های داخلی و خارجی
             </p>
 
+            <div class="media-title">
+                پوستر اثر
+            </div>
+
+            <img
+            class="film-poster"
+            src="khiyaban-haye-sard-poster.webp"
+            alt="پوستر فیلم خیابان‌های سرد">
+
+            <div class="media-title">
+                عکس پشت صحنه
+            </div>
+
+            <div class="film-gallery">
+
+                <img
+                src="khiyaban-haye-sard-1.webp"
+                alt="پشت صحنه فیلم خیابان‌های سرد">
+
+                <img
+                src="khiyaban-haye-sard-2.webp"
+                alt="پشت صحنه فیلم خیابان‌های سرد">
+
+            </div>
+
+            <div class="media-title">
+                تیزر
+            </div>
+
+            <video
+            class="film-video"
+            controls
+            preload="metadata">
+
+                <source
+                src="1000081255.mp4"
+                type="video/mp4">
+
+                مرورگر شما از پخش ویدئو پشتیبانی نمی‌کند.
+
+            </video>
+
         </article>
 
 
+        <!-- قانون سوم -->
+
+        <article class="film-card">
+
+            <div class="film-number">
+                02
+            </div>
+
+            <h3>
+                قانون سوم
+            </h3>
+
+            <p>
+                <strong>نقش:</strong>
+                نقش اصلی
+            </p>
+
+            <p>
+                <strong>کارگردان:</strong>
+                امیرجداری
+            </p>
+
+            <p>
+                جهت حضور در فستیوال‌های خارجی
+            </p>
+
+            <div class="media-title">
+                پوستر اثر
+            </div>
+
+            <img
+            class="film-poster"
+            src="ghanon-sevom-poster.webp"
+            alt="پوستر فیلم قانون سوم">
+
+            <div class="media-title">
+                عکس‌های پشت صحنه
+            </div>
+
+            <div class="film-gallery">
+
+                <img
+                src="ghanon-sevom-1.webp"
+                alt="پشت صحنه فیلم قانون سوم">
+
+                <img
+                src="ghanon-sevom-2.webp"
+                alt="پشت صحنه فیلم قانون سوم">
+
+            </div>
+
+            <div class="media-title">
+                تیزر
+            </div>
+
+            <video
+            class="film-video"
+            controls
+            preload="metadata">
+
+                <source
+                src="ghanon-sevom.mp4"
+                type="video/mp4">
+
+                مرورگر شما از پخش ویدئو پشتیبانی نمی‌کند.
+
+            </video>
+
+        </article>
+
+
+        <!-- بخشش -->
 
         <article class="film-card">
 
@@ -1039,9 +963,52 @@ footer{
                 استاد محمود مقامی
             </p>
 
+            <div class="media-title">
+                پوستر اثر
+            </div>
+
+            <img
+            class="film-poster"
+            src="bakhshesh-poster.webp"
+            alt="پوستر تله‌فیلم بخشش">
+
+            <div class="media-title">
+                عکس‌های پشت صحنه
+            </div>
+
+            <div class="film-gallery">
+
+                <img
+                src="bakhshesh-1.webp"
+                alt="پشت صحنه تله‌فیلم بخشش">
+
+                <img
+                src="bakhshesh-2.webp"
+                alt="پشت صحنه تله‌فیلم بخشش">
+
+            </div>
+
+            <div class="media-title">
+                تیزر
+            </div>
+
+            <video
+            class="film-video"
+            controls
+            preload="metadata">
+
+                <source
+                src="bakhshesh.mp4"
+                type="video/mp4">
+
+                مرورگر شما از پخش ویدئو پشتیبانی نمی‌کند.
+
+            </video>
+
         </article>
 
 
+        <!-- جنون عشق -->
 
         <article class="film-card">
 
@@ -1063,48 +1030,66 @@ footer{
                 محمدرضا دلخانی
             </p>
 
-        </article>
+            <div class="media-title">
+                عکس دورخوانی
+            </div>
 
+            <div class="film-gallery">
+
+                <img
+                src="jonoon-eshgh-1.webp"
+                alt="عکس دورخوانی تله‌فیلم جنون عشق">
+
+                <img
+                src="jonoon-eshgh-2.webp"
+                alt="عکس دورخوانی تله‌فیلم جنون عشق">
+
+            </div>
+
+            <div class="media-title">
+                تیزر
+            </div>
+
+            <video
+            class="film-video"
+            controls
+            preload="metadata">
+
+                <source
+                src="jonoon-eshgh.mp4"
+                type="video/mp4">
+
+                مرورگر شما از پخش ویدئو پشتیبانی نمی‌کند.
+
+            </video>
+
+        </article>
 
     </div>
 
-
 </section>
 
-
-
-<!-- =========================
-     CONTACT
-========================= -->
+<!-- CONTACT -->
 
 <section
 id="contact"
 class="contact-section"
 >
 
-
     <div class="section-kicker">
         CONTACT
     </div>
-
 
     <h2 class="section-title">
         ارتباط با امیرحسین اکبری مهر
     </h2>
 
-
     <p class="contact-intro">
-
         برای ارتباط مستقیم می‌توانید از
         راه‌های ارتباطی زیر استفاده کنید.
-
     </p>
 
-
     <div class="contact-grid">
-
-
-        <!-- PHONE -->
 
         <a
         class="contact-card"
@@ -1114,7 +1099,6 @@ class="contact-section"
             <div class="contact-icon">
                 ☎
             </div>
-
 
             <div>
 
@@ -1131,9 +1115,6 @@ class="contact-section"
         </a>
 
 
-
-        <!-- INSTAGRAM -->
-
         <a
         class="contact-card"
         href="https://instagram.com/amirhossein____akbari"
@@ -1144,7 +1125,6 @@ class="contact-section"
             <div class="contact-icon">
                 ◎
             </div>
-
 
             <div>
 
@@ -1161,9 +1141,6 @@ class="contact-section"
         </a>
 
 
-
-        <!-- TELEGRAM -->
-
         <a
         class="contact-card"
         href="https://t.me/A_M_I_R_H_O_S_S_E_I_N"
@@ -1174,7 +1151,6 @@ class="contact-section"
             <div class="contact-icon">
                 ✈
             </div>
-
 
             <div>
 
@@ -1190,27 +1166,11 @@ class="contact-section"
 
         </a>
 
-
     </div>
-
-
-    <div class="contact-note">
-
-        ارتباط مستقیم با امیرحسین اکبری مهر
-
-    </div>
-
 
 </section>
 
-
 </main>
-
-
-
-<!-- =========================
-     FOOTER
-========================= -->
 
 <footer>
 
@@ -1222,7 +1182,6 @@ class="contact-section"
 
 </footer>
 
-
 </body>
 
-   </html>
+</html>
